@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:andriod="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    app:backgroundTint="@null">
+    <Button
+        android:id="@+id/buttom_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0F000000"
+        android:text="知乎日报"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        app:backgroundTint="@null" />
+
+    <LinearLayout
+        android:id="@+id/linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttom_1"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_lgion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textColor="#2196F3"
+            android:textColorLink="#F44336"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/text_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="欢迎来到知乎日报"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_top"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/boder"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_lgion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_user" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:hint="请输入账号"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLength="10"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_thr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_sec"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/boder"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_password" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:lines="1"
+            android:padding="10dp"
+            andriod:maxLength="10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_agreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_thr"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同意用户协议"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttom_lgion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_agreement"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#2196F3"
+        android:text="登录"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/button_sgin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttom_lgion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:backgroundTint="#FFFFFF"
+        android:text="没有账号？立即注册"
+        android:textColor="#3F51B5" />
+
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_sgin"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttom_sina_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:drawableTop="@drawable/account_sina"
+            android:text="新浪微博登录"
+            android:textColor="#3F51B5"
+            style="?android:attr/borderlessButtonStyle">
+        </Button>
+        <Button
+            android:id="@+id/buttom_tencent_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            style="?android:attr/borderlessButtonStyle"
+            android:drawableTop="@drawable/account_tencent"
+            android:text="腾讯微博登录"
+            android:textColor="#3F51B5">
+        </Button>
+     </LinearLayout>
+
+    </RelativeLayout>
